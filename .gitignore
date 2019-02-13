@@ -25,3 +25,21 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+config/database\.yml
+
+\.idea/\.generators
+
+\.idea/\.rakeTasks
+
+\.idea/encodings\.xml
+
+\.idea/falcon-mx\.iml
+
+\.idea/misc\.xml
+
+\.idea/modules\.xml
+
+\.idea/vcs\.xml
+
+\.idea/workspace\.xml

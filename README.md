@@ -7,7 +7,7 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 
 ---
 
-###SETUP TODO LIST
+### SETUP TODO LIST
 - [X] Setup Project
 - [X] Setup Deployment
 - [X] Integrar bootstrap
@@ -15,7 +15,7 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 
 ---
 
-###Sprint 1 / Feb 9 - Mar 5
+### Sprint 1 / Feb 9 - Mar 5
 - [X] Instalación y setup de herramientas (Postgresql, Ruby on Rails)
 - [X] Crear repositorio Github
 - [ ] Diseñar el estilo del sitio

@@ -6,7 +6,10 @@ FALCON (Fetal Alcohol Espectrum Latin American Consortium) – México actualmen
 Como apoyo para este proyecto, se tiene propuesto crear una página web que ayuda a difundir y dar a conocer los objetivos del consorcio, que son el de brindar información a la población local para prevenir complicaciones a la salud de los niños afectados, además de servir también como una herramienta donde los investigadores puedan aplicar cuestionarios de diagnóstico a los pacientes involucrados en este proyecto y visualizar los resultados generales que se vayan obteniendo.
 
 ---
+### SCREENS DESIGN
+[Figma](https://www.figma.com/file/M7cF5AJQcHuR9B5lUF7LsDlI/falcon-mx?node-id=0%3A1)
 
+---
 ### SETUP TODO LIST
 - [X] Setup Project
 - [X] Setup Deployment
@@ -18,7 +21,7 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 ### Sprint 1 / Feb 9 - Mar 5
 - [X] Instalación y setup de herramientas (Postgresql, Ruby on Rails)
 - [X] Crear repositorio Github
-- [ ] Diseñar el estilo del sitio
+- [X] Diseñar el estilo del sitio
 - [ ] Seleccionar y diseñar la información que se presentará en la página principal.
 - [ ] Crear la pantalla de inicio
 - [ ] Crear la pantalla de Directorio de Ayuda

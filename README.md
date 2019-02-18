@@ -6,11 +6,15 @@ FALCON (Fetal Alcohol Espectrum Latin American Consortium) – México actualmen
 Como apoyo para este proyecto, se tiene propuesto crear una página web que ayuda a difundir y dar a conocer los objetivos del consorcio, que son el de brindar información a la población local para prevenir complicaciones a la salud de los niños afectados, además de servir también como una herramienta donde los investigadores puedan aplicar cuestionarios de diagnóstico a los pacientes involucrados en este proyecto y visualizar los resultados generales que se vayan obteniendo.
 
 ---
-### SCREENS DESIGN
+## Latest Release / Production Deployment
+[Sitio](https://falcon-mx.herokuapp.com)
+
+---
+### Screens Design
 [Figma](https://www.figma.com/file/M7cF5AJQcHuR9B5lUF7LsDlI/falcon-mx?node-id=0%3A1)
 
 ---
-### SETUP TODO LIST
+### Setup TODO LIST
 - [X] Setup Project
 - [X] Setup Deployment
 - [X] Integrar bootstrap

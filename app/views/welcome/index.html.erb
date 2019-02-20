@@ -1,4 +1,27 @@
-<h2>Falcon MX</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="container-fluid bg-primary text-white text-center p-4">
+  <h2>FALCON</h2>
+  <p>
+    FETAL ALCOHOL SYNDROME LATIN AMERICAN CONSORTIUM
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-4">
+    <div class="bg-white m-4">
+      MENU
+      <div class="list-group">
+        <%= link_to 'DIAGNÓSTICO EXPRESS', root_path, remote: true, class:'list-group-item', id:'express_diagnostic' %>
+        <%= link_to 'INFORMACIÓN GENERAL', root_path, remote: true, class:'list-group-item', id:'general_information' %>
+        <%= link_to 'INFORMACIÓN PREVENTIVA', root_path, remote: true, class:'list-group-item', id:'preventive_information' %>
+        <%= link_to 'GUÍAS', '#', remote: true, class:'list-group-item'%>
+        <%= link_to 'DIVULGACIONES CIENTÍFICAS', '#', remote: true, class:'list-group-item'%>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-8">
+    <div class="bg-white m-4" id="target_div">
+      <%= render partial: 'express_diagnostic' %>
+    </div>
+  </div>
+</div>

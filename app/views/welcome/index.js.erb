@@ -1,0 +1,11 @@
+$('#express_diagnostic').click(function(){
+    $('#target_div').html("<%= j render '/welcome/express_diagnostic'  %>")
+})
+
+$('#general_information').click(function(){
+    $('#target_div').html("<%= j render '/welcome/general_information' %>")
+})
+
+$('#preventive_information').click(function(){
+    $('#target_div').html("<%= j render '/welcome/preventive_information'  %>")
+})

@@ -27,13 +27,14 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 - [X] Crear repositorio Github
 - [X] Diseñar el estilo del sitio
 - [ ] Seleccionar y diseñar la información que se presentará en la página principal.
-- [ ] Crear la pantalla de inicio
+- [X] Crear la pantalla de inicio
 - [ ] Crear la pantalla de Directorio de Ayuda
 - [ ] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
-- [ ] Implementar en la página de Inicio la forma de login.
-- [ ] Agregar funcionalidad al login para acceder como administrador.
+- [X] Implementar en la página de Inicio la forma de login.
+- [X] Agregar funcionalidad al login para acceder como administrador.
 - [ ] Crear la pantalla de Lista de Investigadores
 - [ ] Crear la pantalla de Nuevo Investigador
 - [ ] Agregar funcionalidad para  eliminar usuarios de la lista de Investigadores. 
 - [ ] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
 - [ ] Pruebas de privilegios de administrador/investigador.
+- [ ] Estilizar frontend en pantallas según Figma

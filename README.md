@@ -18,7 +18,7 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 - [X] Setup Project
 - [X] Setup Deployment
 - [X] Integrar bootstrap
-- [ ] Integrar rspec
+- [X] Integrar rspec
 
 ---
 
@@ -26,10 +26,10 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 - [X] Instalación y setup de herramientas (Postgresql, Ruby on Rails)
 - [X] Crear repositorio Github
 - [X] Diseñar el estilo del sitio
-- [ ] Seleccionar y diseñar la información que se presentará en la página principal.
+- [X] Seleccionar y diseñar la información que se presentará en la página principal.
 - [X] Crear la pantalla de inicio
 - [ ] Crear la pantalla de Directorio de Ayuda
-- [ ] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
+- [X] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
 - [X] Implementar en la página de Inicio la forma de login.
 - [X] Agregar funcionalidad al login para acceder como administrador.
 - [ ] Crear la pantalla de Lista de Investigadores

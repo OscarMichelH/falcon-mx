@@ -24,7 +24,7 @@
         <% if !user_signed_in? %>
           <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-outline-primary my-2 my-sm-0' %>
         <% else %>
-          <% if current_user.admin? %>
+          <% if current_user.is_admin? %>
             <%= link_to 'Investigadores', users_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
           <% end %>
           <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: 'btn btn-outline-primary my-2 my-sm-0' %>

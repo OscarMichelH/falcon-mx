@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :comprobe_admin
-  
+
   # GET /users
   # GET /users.json
   def index
@@ -70,10 +70,10 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:email, :password)
+      params.require(:user).permit(:email, :password, :admin)
     end
 
     def comprobe_admin
-      redirect_to root_path if current_user.nil? || !current_user.admin?
+      redirect_to root_path if current_user.is_admin? if current_user.nil?
     end
 end

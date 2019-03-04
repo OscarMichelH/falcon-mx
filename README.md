@@ -32,9 +32,9 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 - [X] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
 - [X] Implementar en la página de Inicio la forma de login.
 - [X] Agregar funcionalidad al login para acceder como administrador.
-- [ ] Crear la pantalla de Lista de Investigadores
-- [ ] Crear la pantalla de Nuevo Investigador
-- [ ] Agregar funcionalidad para  eliminar usuarios de la lista de Investigadores. 
-- [ ] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
-- [ ] Pruebas de privilegios de administrador/investigador.
+- [X] Crear la pantalla de Lista de Investigadores
+- [X] Crear la pantalla de Nuevo Investigador
+- [X] Agregar funcionalidad para  eliminar usuarios de la lista de Investigadores. 
+- [X] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
+- [X] Pruebas de privilegios de administrador/investigador.
 - [ ] Estilizar frontend en pantallas según Figma

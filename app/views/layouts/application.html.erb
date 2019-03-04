@@ -24,7 +24,11 @@
         <% if !user_signed_in? %>
           <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-outline-primary my-2 my-sm-0' %>
         <% else %>
+          <% if current_user.admin? %>
+            <%= link_to 'Investigadores', users_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
+          <% end %>
           <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: 'btn btn-outline-primary my-2 my-sm-0' %>
+
         <% end %>
       </div>
     </nav>
@@ -36,40 +40,40 @@
     <p class="alert"><%= alert %></p>
 
     <!--footer starts from here-->
-    <footer class="footer bg-secondary">
-      <div class="container bottom_border">
-        <div class="row">
-          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">CONTÁCTANOS</h5>
-            <!--headin5_amrc-->
-            <p><i class="fa fa-whatsapp"></i> (México) +52 81 8888 2117 </p>
-            <p><i class="fa fa fa-mail"></i> falcon.mx@outlook.com  </p>
+    <% unless !current_page?(root_path) %>
+      <footer class="footer bg-secondary">
+        <div class="container bottom_border">
+          <div class="row">
+            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">CONTÁCTANOS</h5>
+              <!--headin5_amrc-->
+              <p><i class="fa fa-whatsapp"></i> (México) +52 81 8888 2117 </p>
+              <p><i class="fa fa fa-mail"></i> falcon.mx@outlook.com  </p>
 
+
+            </div>
+
+
+            <div class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">BRAZIL</h5>
+              <p><a href="#">Pending url</a></p>
+            </div>
+
+
+            <div class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">COLOMBIA</h5>
+              <p><a href="#">Pending url</a></p>
+            </div>
+
+            <div class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">NOFAS USA</h5>
+              <p>National Organization on Fetal Alcohol Syndrome</p>
+              <p><a href="https://www.nofas.org/">https://www.nofas.org/</a></p>
+            </div>
 
           </div>
-
-
-          <div class=" col-sm-4 col-md  col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">BRAZIL</h5>
-            <p><a href="#">Pending url</a></p>
-          </div>
-
-
-          <div class=" col-sm-4 col-md  col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">COLOMBIA</h5>
-            <p><a href="#">Pending url</a></p>
-          </div>
-
-          <div class=" col-sm-4 col-md  col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">NOFAS USA</h5>
-            <p>National Organization on Fetal Alcohol Syndrome</p>
-            <p><a href="https://www.nofas.org/">https://www.nofas.org/</a></p>
-          </div>
-
         </div>
-      </div>
-    </footer>
-
-
+      </footer>
+    <% end %>
   </body>
 </html>

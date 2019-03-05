@@ -21,6 +21,8 @@
             <%= link_to 'Inicio', root_path, class: 'nav-link' %>
           </li>
         </ul>
+        <%= link_to 'Directorio De Ayuda', contacts_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
+
         <% if !user_signed_in? %>
           <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-outline-primary my-2 my-sm-0' %>
         <% else %>
@@ -28,7 +30,6 @@
             <%= link_to 'Investigadores', users_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
           <% end %>
           <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: 'btn btn-outline-primary my-2 my-sm-0' %>
-
         <% end %>
       </div>
     </nav>

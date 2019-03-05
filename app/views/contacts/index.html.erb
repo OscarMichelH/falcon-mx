@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Directorio De Ayuda</h1>
+
+<table class="table table-bordred table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Corréo Electrónico</th>
+      <th>Número de Teléfono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.tel_number %></td>
+        <td><%= link_to 'Ver más', contact %></td>
+        <% if user_signed_in? %>
+          <% if current_user.is_admin? %>
+          <td><%= link_to 'Editar', edit_contact_path(contact) %></td>
+          <td><%= link_to 'Eliminar', contact, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if user_signed_in? %>
+  <% if current_user.is_admin? %>
+  <%= link_to 'Nuevo Contacto', new_contact_path %>
+  <% end %>
+<% end %>

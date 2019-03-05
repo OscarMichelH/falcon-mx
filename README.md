@@ -6,27 +6,35 @@ FALCON (Fetal Alcohol Espectrum Latin American Consortium) – México actualmen
 Como apoyo para este proyecto, se tiene propuesto crear una página web que ayuda a difundir y dar a conocer los objetivos del consorcio, que son el de brindar información a la población local para prevenir complicaciones a la salud de los niños afectados, además de servir también como una herramienta donde los investigadores puedan aplicar cuestionarios de diagnóstico a los pacientes involucrados en este proyecto y visualizar los resultados generales que se vayan obteniendo.
 
 ---
+## Latest Release / Production Deployment
+[Sitio](https://falcon-mx.herokuapp.com)
 
-### SETUP TODO LIST
+---
+### Screens Design
+[Figma](https://www.figma.com/file/M7cF5AJQcHuR9B5lUF7LsDlI/falcon-mx?node-id=0%3A1)
+
+---
+### Setup TODO LIST
 - [X] Setup Project
 - [X] Setup Deployment
 - [X] Integrar bootstrap
-- [ ] Integrar rspec
+- [X] Integrar rspec
 
 ---
 
 ### Sprint 1 / Feb 9 - Mar 5
 - [X] Instalación y setup de herramientas (Postgresql, Ruby on Rails)
 - [X] Crear repositorio Github
-- [ ] Diseñar el estilo del sitio
-- [ ] Seleccionar y diseñar la información que se presentará en la página principal.
-- [ ] Crear la pantalla de inicio
+- [X] Diseñar el estilo del sitio
+- [X] Seleccionar y diseñar la información que se presentará en la página principal.
+- [X] Crear la pantalla de inicio
 - [ ] Crear la pantalla de Directorio de Ayuda
-- [ ] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
-- [ ] Implementar en la página de Inicio la forma de login.
-- [ ] Agregar funcionalidad al login para acceder como administrador.
-- [ ] Crear la pantalla de Lista de Investigadores
-- [ ] Crear la pantalla de Nuevo Investigador
-- [ ] Agregar funcionalidad para  eliminar usuarios de la lista de Investigadores. 
-- [ ] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
-- [ ] Pruebas de privilegios de administrador/investigador.
+- [X] Agregar el contenido revisado a la pantalla de inicio y al directorio de ayuda.
+- [X] Implementar en la página de Inicio la forma de login.
+- [X] Agregar funcionalidad al login para acceder como administrador.
+- [X] Crear la pantalla de Lista de Investigadores
+- [X] Crear la pantalla de Nuevo Investigador
+- [X] Agregar funcionalidad para  eliminar usuarios de la lista de Investigadores. 
+- [X] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
+- [X] Pruebas de privilegios de administrador/investigador.
+- [ ] Estilizar frontend en pantallas según Figma

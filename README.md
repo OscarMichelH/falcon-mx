@@ -38,3 +38,21 @@ Como apoyo para este proyecto, se tiene propuesto crear una página web que ayud
 - [X] Agregar funcionalidad para editar el usuario y contraseña de un usuario en la lista de Investigadores.
 - [X] Pruebas de privilegios de administrador/investigador.
 - [X] Estilizar frontend en pantallas según Figma
+
+---
+
+### Sprint 2 / Mar 6 - Abr 2
+- [ ] Obtener la revisión final del cuestionario que se aplicará en la investigación
+- [ ] Diseñar el cuestionario para su uso en el sitio
+- [ ] Diseñar la base de datos que almacenará los resultados del cuestionario
+- [ ] Desarrollar la base de datos en Postgresql
+- [ ] Agregar funcionalidad al login para acceder como Investigador
+- [ ] Crear la página de Nuevo Cuestionario
+- [ ] Desarrollar la forma que se usará para contestar las preguntas del Cuestionario
+- [ ] Crear la página de Resultados
+- [ ] Crear la página de Resultados Crudo
+- [ ] Ligar la base de datos a la tabla de resultados de la página de Resultados Crudos
+- [ ] Agregar funcionalidad a la página de resultados crudos para poder manipular la tabla de resultados
+- [ ] Agregar permisos a la página de resultados crudos para que un resultado solo pueda ser modificado por el usuario que lo subió
+- [ ] Pruebas de modificación de la base de datos y permisos
+- [ ] Pruebas con el cliente del proceso de llenado de cuestionarios

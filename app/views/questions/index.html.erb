@@ -14,7 +14,11 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
+        <% if question.text == "Marca temporal" %>
+        <td> <hr> </td>
+        <% else %>
         <td><%= question.text %></td>
+        <% end %>
         <td><%= question.answer %></td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>

@@ -28,6 +28,8 @@
         <% else %>
           <% if current_user.is_admin? %>
             <%= link_to 'Investigadores', users_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
+            <%= link_to 'Formularios', surveys_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
+            <%= link_to 'Resultados', questions_path, class: 'btn btn-outline-primary my-2 my-sm-0 mr-2' %>
           <% end %>
           <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete, class: 'btn btn-outline-primary my-2 my-sm-0' %>
         <% end %>

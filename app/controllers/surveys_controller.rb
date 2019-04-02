@@ -1,5 +1,6 @@
 class SurveysController < ApplicationController
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
+  before_action :comprobe_admin
 
   # GET /surveys
   # GET /surveys.json
@@ -50,6 +51,8 @@ class SurveysController < ApplicationController
         respuestas.push(respuesta)
       end
     end
+
+    Survey.destroy_all
 
     @survey = Survey.new
     @survey.name = survey_params[:name]

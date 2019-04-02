@@ -1,19 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @survey.name %>
 </p>
 
 <p>
-  <strong>Response:</strong>
+  <strong>Número de respuestas:</strong>
   <%= @survey.responses.count %>
 </p>
 
-
-Respuesta numero:
-<%= text_field_tag nil, nil %>
-<%= link_to 'Enviar', action: :show, controller: :response %>
-<br>
 <%= link_to 'Edit', edit_survey_path(@survey) %> |
 <%= link_to 'Back', surveys_path %>

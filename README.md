@@ -160,20 +160,20 @@ $ rspec
 ---
 
 ### Sprint 2 / Mar 6 - Abr 2
-- [ ] Obtener la revisión final del cuestionario que se aplicará en la investigación
-- [ ] Diseñar el cuestionario para su uso en el sitio
-- [ ] Diseñar la base de datos que almacenará los resultados del cuestionario
-- [ ] Desarrollar la base de datos en Postgresql
-- [ ] Agregar funcionalidad al login para acceder como Investigador
-- [ ] Crear la página de Nuevo Cuestionario
-- [ ] Desarrollar la forma que se usará para contestar las preguntas del Cuestionario
-- [ ] Crear la página de Resultados
-- [ ] Crear la página de Resultados Crudo
-- [ ] Ligar la base de datos a la tabla de resultados de la página de Resultados Crudos
-- [ ] Agregar funcionalidad a la página de resultados crudos para poder manipular la tabla de resultados
-- [ ] Agregar permisos a la página de resultados crudos para que un resultado solo pueda ser modificado por el usuario que lo subió
-- [ ] Pruebas de modificación de la base de datos y permisos
-- [ ] Pruebas con el cliente del proceso de llenado de cuestionarios
+- [X] Obtener la revisión final del cuestionario que se aplicará en la investigación
+- [X] Diseñar el cuestionario para su uso en el sitio
+- [X] Diseñar la base de datos que almacenará los resultados del cuestionario
+- [X] Desarrollar la base de datos en Postgresql
+- [X] Agregar funcionalidad al login para acceder como Investigador
+- [X] Crear la página de Nuevo Cuestionario
+- [X] Desarrollar la forma que se usará para contestar las preguntas del Cuestionario
+- [X] Crear la página de Resultados
+- [X] Crear la página de Resultados Crudo
+- [X] Ligar la base de datos a la tabla de resultados de la página de Resultados Crudos
+- [X] Agregar funcionalidad a la página de resultados crudos para poder manipular la tabla de resultados
+- [X] Agregar permisos a la página de resultados crudos para que un resultado solo pueda ser modificado por el usuario que lo subió
+- [X] Pruebas de modificación de la base de datos y permisos
+- [X] Pruebas con el cliente del proceso de llenado de cuestionarios
 
 ### Sprint 3 / Abr 3 - Abr 30
 - [X] Idear como será la presentación del reporte de resultados procesados con el cliente.

@@ -53,8 +53,6 @@ class SurveysController < ApplicationController
       end
     end
 
-    Survey.destroy_all
-
     @survey = Survey.new
     @survey.name = survey_params[:name]
     @survey.responses = respuestas
@@ -62,8 +60,7 @@ class SurveysController < ApplicationController
     @survey.answers_key = survey_params[:answers_key]
 
     File.delete(excelPath) if File.exist?(excelPath)
-
-
+    
     respond_to do |format|
       if @survey.save
         format.html { redirect_to @survey, notice: 'Survey was successfully created.' }

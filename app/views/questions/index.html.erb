@@ -14,7 +14,7 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <% if question.text == "Marca temporal" %>
+        <% if question.text == "Timestamp" %>
         <td> <hr> </td>
         <% else %>
         <td><%= question.text %></td>

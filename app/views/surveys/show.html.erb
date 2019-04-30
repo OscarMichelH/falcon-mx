@@ -5,6 +5,11 @@
   <%= @survey.name %>
 </p>
 
+<%#= high_chart("survey_chart", @chart) %>
+<%= link_to 'Resultados', 'https://docs.google.com/forms/d/' + @survey.answers_key + '/edit#responses', target: '_blank' %>
+<br>
+<%= link_to 'Descargar respuestas', 'https://docs.google.com/feeds/download/spreadsheets/Export?key=' + @survey.spreadsheet_key + '&exportFormat=xlsx' %>
+
 <p>
   <strong>Número de respuestas:</strong>
   <%= @survey.responses.count %>

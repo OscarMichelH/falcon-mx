@@ -31,6 +31,7 @@ gem 'roo'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.0'
+gem 'lazy_high_charts'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

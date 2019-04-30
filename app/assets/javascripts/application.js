@@ -18,3 +18,7 @@
 //= require bootstrap-sprockets
 //= require welcome
 //= require_tree .
+
+//= require highcharts/highcharts
+//= require highcharts/highcharts-more
+//= require highcharts/highstock

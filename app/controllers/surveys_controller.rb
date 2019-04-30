@@ -11,6 +11,7 @@ class SurveysController < ApplicationController
   # GET /surveys/1
   # GET /surveys/1.json
   def show
+    get_survey_chart
   end
 
   # GET /surveys/new
@@ -57,6 +58,8 @@ class SurveysController < ApplicationController
     @survey = Survey.new
     @survey.name = survey_params[:name]
     @survey.responses = respuestas
+    @survey.spreadsheet_key = survey_params[:spreadsheet_key]
+    @survey.answers_key = survey_params[:answers_key]
 
     File.delete(excelPath) if File.exist?(excelPath)
 
@@ -104,6 +107,60 @@ class SurveysController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def survey_params
-      params.require(:survey).permit(:name, :spreadsheet_key)
+      params.require(:survey).permit(:name, :spreadsheet_key, :answers_key)
+    end
+
+    def get_survey_chart
+      categories = []
+      @survey.responses.first.questions.each do |question |
+        categories << question.text
+      end
+      question_num = @survey.responses.first.questions.count
+      groups_answers = []
+      @survey.responses.each do |response|
+        groups_answers << response.questions.pluck(:answer)
+      end
+
+      @chart = LazyHighCharts::HighChart.new('container') do |f|
+        f.chart(
+            type: 'column'
+        )
+
+        f.title(
+            text: 'Resumen'
+        )
+
+        f.subtitle(
+            text: 'Respuestas sobresalientes'
+        )
+
+        f.xAxis(
+            categories: categories,
+            crosshair: true
+        )
+
+        f.yAxis(
+            min: 0
+        )
+
+
+        f.plotOptions(
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        )
+
+        #
+        # groups_answers.each do |group_answers|
+        #   (0..question_num-1).each do |index|
+        #     f.series(
+        #         # name: group_answers[index].to_s,
+        #         data: group_answers[index]
+        #     )
+        #   end
+        #
+        # end
+      end
     end
 end

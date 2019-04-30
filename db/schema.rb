@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_02_031209) do
+ActiveRecord::Schema.define(version: 2019_04_30_054934) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 2019_04_02_031209) do
     t.bigint "response_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "spreadsheet_key"
+    t.string "answers_key"
     t.index ["response_id"], name: "index_surveys_on_response_id"
   end
 

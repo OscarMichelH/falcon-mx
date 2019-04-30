@@ -174,3 +174,18 @@ $ rspec
 - [ ] Agregar permisos a la página de resultados crudos para que un resultado solo pueda ser modificado por el usuario que lo subió
 - [ ] Pruebas de modificación de la base de datos y permisos
 - [ ] Pruebas con el cliente del proceso de llenado de cuestionarios
+
+### Sprint 3 / Abr 3 - Abr 30
+- [X] Idear como será la presentación del reporte de resultados procesados con el cliente.
+- [X] Investigar sobre gems para exportación de tablas en archivos .xls
+- [X] Puebas de exportación de resultados de cuestionarios.
+- [X] Crear enlance de descarga de resultados de cuestionarios
+- [X] Agregar enlace a la página de Resultados Gráficos.
+- [X] Obtener la preguntas y los valores de riesgo para la encuesta de autodiagnóstico.
+- [X] Integración de todas las páginas y pruebas generales asimilando el rol de un usuario público, un investigador y un administrador.
+- [X] Hosteo de base de datos
+- [X] Deploy de aplicacion en internet
+- [X] Integracion y configuración de aplicación en producción (Credenciales, base de datos, dns)
+- [X] Demostración final con el cliente y retroalimentación.
+- [X] Entrega del producto final.
+- [X] Revisión del proyecto.
